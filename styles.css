@@ -37,24 +37,20 @@ ul li {
 
 /* GLOBAL */
 html {
-  background: url("img/backgroundPink.jpg") #FAF3E1;
+  background: url("img/background.jpg") #FAF3E1;
+  background-size: 2000px;
   background-size: 2000px;
   font-size: 10px; }
   @media screen and (min-width: 1400px) {
     html {
       font-size: 12px; } }
 body {
-  background: url("img/background.jpg") #FAF3E1;
-  background-size: 2000px;
-  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.034), 0 0.4rem 0.5rem rgba(0, 0, 0, 0.048), 0 0.1rem 1rem rgba(0, 0, 0, 0.06);
-  margin: 2rem;
-  border-radius: .4rem;
-  font: 1.8rem/2.4rem 'Courier Prime', monospace;
+  font: 1.6rem/2.2rem 'Courier Prime', monospace;
   color: rgba(43, 52, 80, 0.8);
-  -webkit-font-smoothing: antialiased; }
-  @media screen and (max-width: 767px) {
-    body {
-      margin: 1rem; } }
+  -webkit-font-smoothing: antialiased;
+  border: 0.2rem #D68B77 solid;
+  margin: 1.4rem; }
+
 p {
   margin-top: 2rem; }
   p.noPad {
@@ -83,8 +79,9 @@ h2 {
       font-size: 3.2rem;
       line-height: 3.5rem; } }
 h3 {
-  font: 2.6rem/2.6rem 'Ubuntu Mono', monospace;
-  color: #D68B77; }
+  font: 2.2rem/2.4rem 'Ubuntu Mono', monospace;
+  color: #D68B77;
+  white-space: nowrap; }
   @media screen and (max-width: 767px) {
     h3 {
       font-size: 2rem;
@@ -93,38 +90,32 @@ img {
   border-radius: .4rem; }
 
 /* GRID */
-header {
-  padding: 4rem;
-  max-width: 110rem; }
-  @media screen and (max-width: 767px) {
-    header {
-      padding: 2rem; } }
-  header .col2 {
-    display: grid;
-    grid-template-columns: 1sfr auto;
-    gap: 4rem;
-    white-space: nowrap; }
-    @media screen and (max-width: 1100px) {
-      header .col2 {
-        grid-template: auto auto / 1fr; } }
-  header .row2 {
-    display: grid;
-    white-space: normal; }
-    header .row2 p {
-      margin-top: 1rem;
-      max-width: 80rem; }
-  header img {
-    width: 100%;
-    -webkit-align-content: center;
-            align-content: center; }
+header .col2 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem; }
+  @media screen and (max-width: 1100px) {
+    header .col2 {
+      grid-template: auto auto / 1fr; } }
+header .row2 {
+  display: grid;
+  white-space: normal;
+  margin-top: -2rem; }
+  header .row2 p {
+    margin-top: 1rem;
+    max-width: 80rem; }
+
+header img {
+  width: 100%;
+  -webkit-align-content: center;
+          align-content: center; }
 
 section {
-  display: grid;
-  padding: 4rem;
-  max-width: 114rem; }
+  padding: 4rem; }
   @media screen and (max-width: 767px) {
     section {
-      padding: 2rem; } }
+      padding: 2rem;
+      margin: 1rem; } }
 /*  PAGE STYLES  */
 .imgZoom {
   width: 95%;

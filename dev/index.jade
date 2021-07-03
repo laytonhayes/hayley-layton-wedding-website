@@ -4,25 +4,32 @@ html
   head
     link(href='/styles.css', type='text/css', rel='stylesheet')
     meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
-    link(rel='icon' type='image/png' href='/favicon-32x32.png' sizes='32x32')
-    link(rel='icon' type='image/png' href='/favicon-96x96.png' sizes='96x96')
-    link(rel='icon' type='image/png' href='/favicon-16x16.png' sizes='16x16')
+    
+    link(rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png')
+    link(rel='manifest' href='/site.webmanifest')
     link(rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5')
+    
     title Hayley + Layton's Wedding
 
   body
-    header
-        h2 Hayley and Layton are Getting Hitched!
-        .col2
-            h3 October 30, 2021 #[br] Comfort, TX
-            .row2
-                img.headerImg(src='img/grandCanyonCropped4.jpg', srcset="img/grandCanyonCropped4.jpg 2x")
-                p We’re so excited to celebrate with y’all! Ceremony and festivities in the spirit of South and West. We hope you can join us for the weekend!
+    section.noBack
+        header
+            h2 Hayley and Layton are Getting Hitched!
+            .col2
+                div
+                    h3 October 30, 2021 #[br] Comfort, TX
+                    p We’re so excited to celebrate with y’all! Ceremony and festivities in the spirit of South and West. 
+                    p We hope you can join us for the weekend!
+                .row2
+                    img.headerImg(src='img/grandCanyonCropped3.jpg', srcset='img/grandCanyonCropped2.jpg 2x')
    
     section
         h2 About Comfort, Texas
         p A Hill Country gem operating at a different speed. Founded by German freethinkers in the 1850s, Comfort remains an independent, unincorporated community to this day. The town draws treasure hunters, entrepreneurs, and a wide range of residents seeking a slower pace in Texas’ famed Hill Country. River floats, wine-tasting, antiques, and wildlife all within reach.
-        img(src='img/first.jpg', srcset="img/first.jpg 2x")
+        img(src='img/first.jpg', srcset='img/first.jpg 2x')
+    
     section
         h2 Schedule of Events
         
@@ -41,7 +48,7 @@ html
         p photo of La Catrina
         p Lite fare, Layton’s famous bloody marys, and one last chance to hang and hug before we slowly make our way back to our respective realities. Costumes encouraged. 
         
-        img(src='img/shell.jpg', srcset="img/shell.jpg 2x")
+        img(src='img/shell.jpg', srcset='img/shell.jpg 2x')
         
     section
-        img(src='img/beach.jpg', srcset="img/beach.jpg 2x")
+        img(src='img/beach.jpg', srcset='img/beach.jpg 2x')

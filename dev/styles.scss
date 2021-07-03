@@ -57,7 +57,9 @@ ul li {
 
 /* GLOBAL */
 html {
-  background: url('img/backgroundPink.jpg') $background;
+  background: url('img/background.jpg') $background;
+  background-size: 2000px;
+//  background: url('img/backgroundPink.jpg') $background;
   background-size: 2000px;
   font-size: 10px;
   // bump everything larger if xl screen
@@ -66,20 +68,11 @@ html {
   }
 }
 body {
-  background: url('img/background.jpg') $background;
-  background-size: 2000px;
-  box-shadow:
-    0 .1rem .4rem rgba(0, 0, 0, 0.034),
-    0 .4rem .5rem rgba(0, 0, 0, 0.048),
-    0 .1rem 1rem rgba(0, 0, 0, 0.06);
-  margin: 2rem;
-  border-radius: .4rem;
-  font: 1.8rem/2.4rem 'Courier Prime', monospace;
+  font: 1.6rem/2.2rem 'Courier Prime', monospace;
   color: $textColor;
   -webkit-font-smoothing: antialiased;
-  @media screen and (max-width: $xs-max) {
-    margin: 1rem;
-  }
+  border: .2rem $peach solid;
+  margin: 1.4rem;
 }
 p {
   margin-top: 2rem;
@@ -114,8 +107,9 @@ h2 {
   }
 }
 h3 {
-    font: 2.6rem/2.6rem 'Ubuntu Mono', monospace;
+    font: 2.2rem/2.4rem 'Ubuntu Mono', monospace;
     color: $peach;
+    white-space: nowrap;
     @media screen and (max-width: $xs-max) {
         font-size: 2rem;
         line-height: 2rem;
@@ -127,16 +121,10 @@ img {
 
 /* GRID */
 header {
-    padding: 4rem;
-    max-width: 110rem;
-    @media screen and (max-width: $xs-max) {
-        padding: 2rem;
-    }
     .col2 {
         display: grid;
-        grid-template-columns: 1sfr auto;
-        gap: 4rem;
-        white-space: nowrap;
+        grid-template-columns: 1fr auto;
+        gap: 2rem;
         @media screen and (max-width: $l-max) {
             grid-template: auto auto / 1fr;
         }
@@ -144,6 +132,7 @@ header {
     .row2 {
         display: grid;
         white-space: normal;
+        margin-top: -2rem;
         p {
             margin-top: 1rem;
             max-width: 80rem;
@@ -156,11 +145,10 @@ header {
 }
 
 section {
-  display: grid;
   padding: 4rem;
-  max-width: 114rem;
   @media screen and (max-width: $xs-max) {
     padding: 2rem;
+    margin: 1rem;
   }
 }
 
