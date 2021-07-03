@@ -49,7 +49,8 @@ body {
   color: rgba(43, 52, 80, 0.8);
   -webkit-font-smoothing: antialiased;
   border: 0.2rem #D68B77 solid;
-  margin: 1.4rem; }
+  margin: 1.4rem;
+  min-height: calc(100vh - 3.4rem); }
 
 p {
   margin-top: 2rem; }
@@ -100,7 +101,7 @@ header .col2 {
 header .row2 {
   display: grid;
   white-space: normal;
-  margin-top: -2rem; }
+  margin-top: -1.7rem; }
   header .row2 p {
     margin-top: 1rem;
     max-width: 80rem; }

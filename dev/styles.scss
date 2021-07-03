@@ -73,6 +73,7 @@ body {
   -webkit-font-smoothing: antialiased;
   border: .2rem $peach solid;
   margin: 1.4rem;
+  min-height: calc(100vh - 3.4rem);
 }
 p {
   margin-top: 2rem;
@@ -132,7 +133,7 @@ header {
     .row2 {
         display: grid;
         white-space: normal;
-        margin-top: -2rem;
+        margin-top: -1.7rem;
         p {
             margin-top: 1rem;
             max-width: 80rem;
