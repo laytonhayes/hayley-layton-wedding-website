@@ -1,56 +1,16 @@
 /*  VARIABLES  */
-/*  ANIMATIONS  */
-@-webkit-keyframes scaleImage {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-@keyframes scaleImage {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-
-@-webkit-keyframes scaleImage2 {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); } }
-
-@keyframes scaleImage2 {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); } }
-
 /*  FONTS  */
+/* heading */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
 @font-face {
-  font-family: 'futura';
-  src: url("fonts/futura-medium-webfont.eot");
-  src: url("fonts/futura-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/futura-medium-webfont.woff") format("woff"), url("fonts/futura-medium-webfont.ttf") format("truetype"), url("fonts/futura-medium-webfont.svg#kaufmannregular") format("svg");
+  font-family: 'roberta';
+  src: url("fonts/roberta.woff2") format("woff2"), url("fonts/roberta.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
+/* sub header */
+/* body */
 /*  GLOBAL RESETS  */
 body, p, table, tr, td, ul, ol, li, dl, dd, dt, div, span, a, h1, h2, h3, h4, h5, h6, fieldset {
   margin: 0;
@@ -77,35 +37,32 @@ ul li {
 
 /* GLOBAL */
 html {
-  background: #FCF3E4;
+  background: url("img/backgroundPink.jpg") #FAF3E1;
+  background-size: 2000px;
   font-size: 10px; }
   @media screen and (min-width: 1400px) {
     html {
       font-size: 12px; } }
 body {
-  font: 1.8rem/2.4rem 'futura', sans-serif;
-  border: solid 0.2rem #9B9B9B;
-  margin: 1.2rem;
+  background: url("img/background.jpg") #FAF3E1;
+  background-size: 2000px;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.034), 0 0.4rem 0.5rem rgba(0, 0, 0, 0.048), 0 0.1rem 1rem rgba(0, 0, 0, 0.06);
+  margin: 2rem;
+  border-radius: .4rem;
+  font: 1.8rem/2.4rem 'Courier Prime', monospace;
+  color: rgba(43, 52, 80, 0.8);
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 767px) {
     body {
-      margin: .5rem;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      border-width: .1rem; } }
-section {
-  padding: 4rem;
-  max-width: 90rem;
-  margin: auto;
-  clear: both; }
-  @media screen and (max-width: 767px) {
-    section {
-      padding: 2rem; } }
+      margin: 1rem; } }
 p {
   margin-top: 2rem; }
   p.noPad {
     margin-top: 0; }
-
+  @media screen and (max-width: 767px) {
+    p {
+      font-size: 1.4rem;
+      line-height: 1.8rem; } }
 a {
   color: #C51B0E; }
   a:hover {
@@ -118,13 +75,56 @@ ul.list {
     list-style: circle; }
 
 h2 {
-  font: 4.4rem/5rem 'kaufmann', sans-serif;
+  font: 5rem/5rem 'roberta', sans-serif;
   position: relative;
-  color: #C51B0E; }
+  color: rgba(41, 67, 128, 0.88); }
   @media screen and (max-width: 767px) {
     h2 {
       font-size: 3.2rem;
       line-height: 3.5rem; } }
+h3 {
+  font: 2.6rem/2.6rem 'Ubuntu Mono', monospace;
+  color: #D68B77; }
+  @media screen and (max-width: 767px) {
+    h3 {
+      font-size: 2rem;
+      line-height: 2rem; } }
+img {
+  border-radius: .4rem; }
+
+/* GRID */
+header {
+  padding: 4rem;
+  max-width: 110rem; }
+  @media screen and (max-width: 767px) {
+    header {
+      padding: 2rem; } }
+  header .col2 {
+    display: grid;
+    grid-template-columns: 1sfr auto;
+    gap: 4rem;
+    white-space: nowrap; }
+    @media screen and (max-width: 1100px) {
+      header .col2 {
+        grid-template: auto auto / 1fr; } }
+  header .row2 {
+    display: grid;
+    white-space: normal; }
+    header .row2 p {
+      margin-top: 1rem;
+      max-width: 80rem; }
+  header img {
+    width: 100%;
+    -webkit-align-content: center;
+            align-content: center; }
+
+section {
+  display: grid;
+  padding: 4rem;
+  max-width: 114rem; }
+  @media screen and (max-width: 767px) {
+    section {
+      padding: 2rem; } }
 /*  PAGE STYLES  */
 .imgZoom {
   width: 95%;

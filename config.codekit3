@@ -25,14 +25,6 @@
       "oAP" : "\/CNAME",
       "oF" : 0
     },
-    "\/dev\/.sass-cache\/c2e1f7356a0947b10ef0b077428764380fdfee12\/styles.scssc" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/.sass-cache\/c2e1f7356a0947b10ef0b077428764380fdfee12\/styles.scssc",
-      "oF" : 0
-    },
     "\/dev\/index.jade" : {
       "cB" : 0,
       "cOD" : 1,
@@ -104,39 +96,159 @@
       "oAP" : "\/favicon.ico",
       "oF" : 0
     },
-    "\/fonts\/futura-medium-webfont.eot" : {
+    "\/fonts\/roberta.woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/fonts\/futura-medium-webfont.eot",
+      "oAP" : "\/fonts\/roberta.woff",
       "oF" : 0
     },
-    "\/fonts\/futura-medium-webfont.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/fonts\/futura-medium-webfont.svg",
+    "\/fonts\/roberta.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/roberta.woff2",
+      "oF" : 0
+    },
+    "\/img\/background.jpg" : {
+      "ft" : 16384,
+      "iS" : 575929,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/background.jpg",
       "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/backgroundPink.jpg" : {
+      "ft" : 16384,
+      "iS" : 549325,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/backgroundPink.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
-    "\/fonts\/futura-medium-webfont.ttf" : {
+    "\/img\/beach.jpg" : {
+      "ft" : 16384,
+      "iS" : 1294938,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/beach.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/beach2.jpg" : {
+      "ft" : 16384,
+      "iS" : 350245,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/beach2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/first.jpg" : {
+      "ft" : 16384,
+      "iS" : 327228,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/first.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/grandCanyon" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/fonts\/futura-medium-webfont.ttf",
+      "oAP" : "\/img\/grandCanyon",
       "oF" : 0
     },
-    "\/fonts\/futura-medium-webfont.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/img\/grandCanyonCropped.jpg" : {
+      "ft" : 16384,
+      "iS" : 382707,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/fonts\/futura-medium-webfont.woff",
-      "oF" : 0
+      "oAP" : "\/img\/grandCanyonCropped.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/grandCanyonCropped2.jpg" : {
+      "ft" : 16384,
+      "iS" : 704355,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/grandCanyonCropped2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/grandCanyonCropped3.jpg" : {
+      "ft" : 16384,
+      "iS" : 504138,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/grandCanyonCropped3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/grandCanyonCropped4.jpg" : {
+      "ft" : 16384,
+      "iS" : 400052,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/grandCanyonCropped4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/shell.jpg" : {
+      "ft" : 16384,
+      "iS" : 425952,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/shell.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/index.html" : {
       "cB" : 0,

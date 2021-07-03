@@ -1,35 +1,33 @@
 /*  VARIABLES  */
-$background:  #FCF3E4;
+$background:    #FAF3E1;
+$textColor:     rgba(43, 52, 80, .8);
+$navy:          rgba(41, 67, 128, .88);
+$peach:         #D68B77;
+
 $linen:       #9B9B9B;
 $red:         #C51B0E;
 $indigo:      #40465A;
 $ink:         #000000;
 $xs-max:      767px;
+$l-max:       1100px;
 $xl-min:      1400px;
 
-/*  ANIMATIONS  */
-@keyframes scaleImage {
-    0% {transform: scale(1.0);}
-    50% {transform: scale(1.2);}
-    100% {transform: scale(1.0);}
-}
-@keyframes scaleImage2 {
-    0% {transform: scale(1.2);}
-    50% {transform: scale(1.0);}
-    100% {transform: scale(1.2);}
+/*  FONTS  */
+
+/* heading */
+@font-face {
+    font-family: 'roberta';
+    src: url('fonts/roberta.woff2') format('woff2'),
+         url('fonts/roberta.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/*  FONTS  */
-@font-face {
-  font-family: 'futura';
-  src: url('fonts/futura-medium-webfont.eot');
-  src: url('fonts/futura-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/futura-medium-webfont.woff') format('woff'),
-       url('fonts/futura-medium-webfont.ttf') format('truetype'),
-       url('fonts/futura-medium-webfont.svg#kaufmannregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+/* sub header */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+/* body */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 
 /*  GLOBAL RESETS  */
@@ -59,7 +57,8 @@ ul li {
 
 /* GLOBAL */
 html {
-  background: $background;
+  background: url('img/backgroundPink.jpg') $background;
+  background-size: 2000px;
   font-size: 10px;
   // bump everything larger if xl screen
   @media screen and (min-width: $xl-min) {
@@ -67,30 +66,29 @@ html {
   }
 }
 body {
-  font: 1.8rem/2.4rem 'futura', sans-serif;
-  border: solid .2rem $linen;
-  margin: 1.2rem;
+  background: url('img/background.jpg') $background;
+  background-size: 2000px;
+  box-shadow:
+    0 .1rem .4rem rgba(0, 0, 0, 0.034),
+    0 .4rem .5rem rgba(0, 0, 0, 0.048),
+    0 .1rem 1rem rgba(0, 0, 0, 0.06);
+  margin: 2rem;
+  border-radius: .4rem;
+  font: 1.8rem/2.4rem 'Courier Prime', monospace;
+  color: $textColor;
   -webkit-font-smoothing: antialiased;
   @media screen and (max-width: $xs-max) {
-    margin: .5rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    border-width: .1rem;
-  }
-}
-section {
-  padding: 4rem;
-  max-width: 90rem;
-  margin: auto;
-  clear: both;
-  @media screen and (max-width: $xs-max) {
-    padding: 2rem;
+    margin: 1rem;
   }
 }
 p {
   margin-top: 2rem;
   &.noPad {
     margin-top: 0;
+  }
+  @media screen and (max-width: $xs-max) {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 a {
@@ -107,14 +105,65 @@ ul.list {
   }
 }
 h2 {
-  font: 4.4rem/5rem 'kaufmann', sans-serif;
+  font: 5rem/5rem 'roberta', sans-serif;
   position: relative;
-  color: $red;
+  color: $navy;
   @media screen and (max-width: $xs-max) {
     font-size: 3.2rem;
     line-height: 3.5rem;
   }
 }
+h3 {
+    font: 2.6rem/2.6rem 'Ubuntu Mono', monospace;
+    color: $peach;
+    @media screen and (max-width: $xs-max) {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+img {
+    border-radius: .4rem;
+}
+
+/* GRID */
+header {
+    padding: 4rem;
+    max-width: 110rem;
+    @media screen and (max-width: $xs-max) {
+        padding: 2rem;
+    }
+    .col2 {
+        display: grid;
+        grid-template-columns: 1sfr auto;
+        gap: 4rem;
+        white-space: nowrap;
+        @media screen and (max-width: $l-max) {
+            grid-template: auto auto / 1fr;
+        }
+    }
+    .row2 {
+        display: grid;
+        white-space: normal;
+        p {
+            margin-top: 1rem;
+            max-width: 80rem;
+        }
+    }
+    img {
+        width: 100%;
+        align-content: center;
+    }
+}
+
+section {
+  display: grid;
+  padding: 4rem;
+  max-width: 114rem;
+  @media screen and (max-width: $xs-max) {
+    padding: 2rem;
+  }
+}
+
 
 /*  PAGE STYLES  */
 .imgZoom {
