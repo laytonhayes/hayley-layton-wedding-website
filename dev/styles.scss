@@ -4,10 +4,6 @@ $textColor:     rgba(43, 52, 80, .8);
 $navy:          rgba(41, 67, 128, .88);
 $peach:         #D68B77;
 
-$linen:       #9B9B9B;
-$red:         #C51B0E;
-$indigo:      #40465A;
-$ink:         #000000;
 $xs-max:      767px;
 $l-max:       1100px;
 $xl-min:      1400px;
@@ -59,20 +55,23 @@ ul li {
 html {
   background: url('img/background.jpg') $background;
   background-size: 2000px;
-//  background: url('img/backgroundPink.jpg') $background;
-  background-size: 2000px;
   font-size: 10px;
+  @media screen and (max-width: $xs-max) {
+// TODO: back a different background for mobile
+    background-size: 1200px;
+  }
   // bump everything larger if xl screen
   @media screen and (min-width: $xl-min) {
     font-size: 12px;
   }
 }
 body {
-  font: 1.6rem/2.2rem 'Courier Prime', monospace;
+  font: 1.7rem/2.2rem 'Courier Prime', monospace;
   color: $textColor;
   -webkit-font-smoothing: antialiased;
   border: .2rem $peach solid;
   margin: 1.4rem;
+  min-height: calc(100vh - 3.4rem);
 }
 p {
   margin-top: 2rem;
@@ -80,15 +79,14 @@ p {
     margin-top: 0;
   }
   @media screen and (max-width: $xs-max) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.8rem;
   }
 }
 a {
-  color: $red;
-  &:hover {
-    text-decoration: underline;
-  }
+  color: $peach;
+  text-decoration: underline;
+  cursor: pointer;
 }
 ul.list {
   padding-top: .5rem;
@@ -110,37 +108,35 @@ h3 {
     font: 2.2rem/2.4rem 'Ubuntu Mono', monospace;
     color: $peach;
     white-space: nowrap;
+    margin: 3rem 0 1rem;
     @media screen and (max-width: $xs-max) {
         font-size: 2rem;
         line-height: 2rem;
     }
 }
 img {
-    border-radius: .4rem;
+//    border-radius: .4rem;
+    width: 100%;
+    align-content: center;
+    @media screen and (max-width: $l-max) {
+      width: auto;
+    }
+    @media screen and (max-width: $xs-max) {
+      width: 100%;
+    }
 }
 
-/* GRID */
+
+/* CONTENT BLOCKS */
 header {
-    .col2 {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 2rem;
-        @media screen and (max-width: $l-max) {
-            grid-template: auto auto / 1fr;
-        }
+    padding: 4rem;
+    h3 {
+      margin: 0;
     }
     .row2 {
         display: grid;
         white-space: normal;
-        margin-top: -2rem;
-        p {
-            margin-top: 1rem;
-            max-width: 80rem;
-        }
-    }
-    img {
-        width: 100%;
-        align-content: center;
+        margin-top: -1.7rem;
     }
 }
 
@@ -152,32 +148,52 @@ section {
   }
 }
 
-
-/*  PAGE STYLES  */
-.imgZoom {
-  width: 95%;
-  max-width: 100rem;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  border: 1rem solid white;
-  box-shadow: 0 .2rem .5rem rgba(0,0,0,.1);
-  box-sizing: border-box;
-  z-index: 1;
-  @media screen and (max-width: $xs-max) {
-    border-width: .4rem;
-    width: 90%;
+figure {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  &.u3 {
+    margin-block-start: -3rem;
   }
-  &.vert {
-    width: 35%;
-    margin-right: 3%;
-    
+  &.u6 {
+    margin-block-start: -6rem;
   }
-  img {
-    width: 100%;
-    animation: scaleImage 30s ease-in-out infinite;
-    &.alt {
-      animation: scaleImage2 40s ease-in-out infinite;
+  &.u8 {
+    margin-block-start: -8rem;
+  }
+  figcaption {
+    font-style: italic;
+    color: $navy;
+    margin-block-start: -.6rem;
+    @media screen and (max-width: $xs-max) {
+      font-size: 1.6rem;
+      line-height: 1.8rem;
     }
   }
+}
+
+footer {
+  text-align: center;
+  img {
+    width: auto;
+  }
+}
+
+header,
+section,
+footer {
+  max-width: 120rem;
+  margin: auto;
+}
+
+/* GRID */
+.col2 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    @media screen and (max-width: $l-max) {
+        grid-template: auto auto / 1fr;
+        .u3, .u6, .u8 {
+          margin-block-start: 0;
+        }
+    }
 }

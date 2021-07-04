@@ -75,7 +75,7 @@
       "oS" : 0
     },
     "\/dev\/styles.scss" : {
-      "aP" : 1,
+      "aP" : 0,
       "bl" : 0,
       "dP" : 10,
       "ec" : 1,
@@ -216,6 +216,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/footer.jpg" : {
+      "ft" : 16384,
+      "iS" : 254163,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/footer.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/grandCanyon.jpg" : {
       "ft" : 16384,
       "iS" : 712403,
@@ -281,15 +294,80 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/mort.jpg" : {
+      "ft" : 16384,
+      "iS" : 236759,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/mort.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/shell.jpg" : {
       "ft" : 16384,
-      "iS" : 425952,
+      "iS" : 357483,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/img\/shell.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/shell2.jpg" : {
+      "ft" : 16384,
+      "iS" : 425952,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/shell2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/travel.jpg" : {
+      "ft" : 16384,
+      "iS" : 594156,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/travel.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/travel2.jpg" : {
+      "ft" : 16384,
+      "iS" : 516859,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/travel2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/ursa.jpg" : {
+      "ft" : 16384,
+      "iS" : 306989,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/ursa.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -411,7 +489,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/styles-min.css",
       "oF" : 0,
       "pg" : 0
