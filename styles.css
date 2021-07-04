@@ -42,7 +42,8 @@ html {
   font-size: 10px; }
   @media screen and (max-width: 767px) {
     html {
-      background-size: 1200px; } }
+      background: url("img/backgroundMobile.jpg") #FAF3E1;
+      background-size: 767px; } }
   @media screen and (min-width: 1400px) {
     html {
       font-size: 12px; } }
@@ -85,7 +86,7 @@ h3 {
   font: 2.2rem/2.4rem 'Ubuntu Mono', monospace;
   color: #D68B77;
   white-space: nowrap;
-  margin: 3rem 0 1rem; }
+  margin: 3rem 0 .3rem; }
   @media screen and (max-width: 767px) {
     h3 {
       font-size: 2rem;
@@ -104,9 +105,15 @@ header {
   padding: 4rem; }
   header h3 {
     margin: 0; }
-  header .row2 {
-    display: grid;
-    white-space: normal;
+  header .content {
+    grid-template-columns: 1fr 2.5fr; }
+    @media screen and (max-width: 1100px) {
+      header .content {
+        grid-template: auto auto / 1fr; } }
+  header .img {
+    background: url("img/grandCanyonCropped2.jpg");
+    background-size: cover;
+    height: 32rem;
     margin-top: -1.7rem; }
 
 section {
@@ -115,6 +122,15 @@ section {
     section {
       padding: 2rem;
       margin: 1rem; } }
+.content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem; }
+  @media screen and (max-width: 1100px) {
+    .content {
+      grid-template: auto auto / 1fr; }
+      .content .u3, .content .u6, .content .u8 {
+        margin-block-start: 0; } }
 figure {
   margin-inline-start: 0;
   margin-inline-end: 0; }
@@ -142,14 +158,3 @@ section,
 footer {
   max-width: 120rem;
   margin: auto; }
-
-/* GRID */
-.col2 {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2rem; }
-  @media screen and (max-width: 1100px) {
-    .col2 {
-      grid-template: auto auto / 1fr; }
-      .col2 .u3, .col2 .u6, .col2 .u8 {
-        margin-block-start: 0; } }
