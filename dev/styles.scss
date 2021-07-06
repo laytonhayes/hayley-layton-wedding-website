@@ -54,7 +54,7 @@ ul li {
 /* GLOBAL */
 html {
   background: url('img/background.jpg') $background;
-  background-size: 2000px;
+  background-size: 167rem;
   font-size: 10px;
   @media screen and (max-width: $xs-max) {
     background: url('img/backgroundMobile.jpg') $background;
@@ -105,53 +105,75 @@ h2 {
   }
 }
 h3 {
-    font: 2.2rem/2.4rem 'Ubuntu Mono', monospace;
-    color: $peach;
-    white-space: nowrap;
-    margin: 3rem 0 .3rem;
-    @media screen and (max-width: $xs-max) {
-        font-size: 2rem;
-        line-height: 2rem;
-    }
+  font: 2.2rem/2.4rem 'Ubuntu Mono', monospace;
+  color: $peach;
+  white-space: nowrap;
+  margin: 3rem 0 .3rem;
+  @media screen and (max-width: $xs-max) {
+      font-size: 2rem;
+      line-height: 2rem;
+  }
 }
 img {
 //    border-radius: .4rem;
+  width: 100%;
+  align-content: center;
+  @media screen and (max-width: $l-max) {
+    width: auto;
+  }
+  @media screen and (max-width: $xs-max) {
     width: 100%;
-    align-content: center;
-    @media screen and (max-width: $l-max) {
-      width: auto;
-    }
-    @media screen and (max-width: $xs-max) {
-      width: 100%;
-    }
+  }
 }
 
 
 /* CONTENT BLOCKS */
 header {
-    padding: 4rem;
-    h3 {
-      margin: 0;
+  padding: 4rem;
+  h3 {
+    margin: 0;
+  }
+  .content {
+    grid-template-columns: 1fr 2.8fr;
+    grid-template-rows: auto 1fr;
+    gap: 0 2rem;
+    .text {
+      grid-column-start: 1;
+      max-width: 70rem;
     }
-    .content {
-      grid-template-columns: 1fr 2.5fr;
-      @media screen and (max-width: $l-max) {
-        grid-template: auto auto / 1fr;
-      }
+    @media screen and (max-width: $l-max) {
+      grid-template: auto auto auto / 1fr;
     }
-    .img {
-      background: url('img/grandCanyonCropped2.jpg');
-      background-size: cover;
-      height: 32rem;
-      margin-top: -1.7rem;
+  }
+  .img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2; 
+    background: url('img/grandCanyon.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 32rem;
+    margin-top: -1.7rem;
+    @media screen and (max-width: $l-max) {
+      margin-top: 2rem;
+      grid-column-start: 1; 
+      grid-row-start: 2;
+      grid-row-end: 3;         
     }
+    @media screen and (max-width: 600px) {
+      background-image: url('img/grandCanyonMobile.jpg');
+      
+    }
+  }
+  @media screen and (max-width: $xs-max) {
+    padding: 2rem;
+  }
 }
 
 section {
   padding: 4rem;
   @media screen and (max-width: $xs-max) {
     padding: 2rem;
-    margin: 1rem;
   }
 }
 
@@ -161,7 +183,7 @@ section {
   gap: 2rem;
   @media screen and (max-width: $l-max) {
     grid-template: auto auto / 1fr;
-    .u3, .u6, .u8 {
+    .u3, .u6, .u8, .d8 {
       margin-block-start: 0;
     }
   }
@@ -179,6 +201,9 @@ figure {
   &.u8 {
     margin-block-start: -8rem;
   }
+  &.d8 {
+    margin-block-start: 8rem;
+  }
   figcaption {
     font-style: italic;
     color: $navy;
@@ -191,10 +216,10 @@ figure {
 }
 
 footer {
-  text-align: center;
-  img {
-    width: auto;
-  }
+  background: url('img/footer.jpg') no-repeat;
+  height: 42rem;
+  background-size: contain;
+  background-position: center bottom;
 }
 
 header,

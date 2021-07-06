@@ -250,7 +250,7 @@
       "oAP" : "\/img\/grandCanyon.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -300,6 +300,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/img\/grandCanyonCropped4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/grandCanyonMobile.jpg" : {
+      "ft" : 16384,
+      "iS" : 135313,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/grandCanyonMobile.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

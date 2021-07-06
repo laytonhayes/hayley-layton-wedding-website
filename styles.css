@@ -38,7 +38,7 @@ ul li {
 /* GLOBAL */
 html {
   background: url("img/background.jpg") #FAF3E1;
-  background-size: 2000px;
+  background-size: 167rem;
   font-size: 10px; }
   @media screen and (max-width: 767px) {
     html {
@@ -106,22 +106,41 @@ header {
   header h3 {
     margin: 0; }
   header .content {
-    grid-template-columns: 1fr 2.5fr; }
+    grid-template-columns: 1fr 2.8fr;
+    grid-template-rows: auto 1fr;
+    gap: 0 2rem; }
+    header .content .text {
+      grid-column-start: 1;
+      max-width: 70rem; }
     @media screen and (max-width: 1100px) {
       header .content {
-        grid-template: auto auto / 1fr; } }
+        grid-template: auto auto auto / 1fr; } }
   header .img {
-    background: url("img/grandCanyonCropped2.jpg");
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    background: url("img/grandCanyon.jpg");
     background-size: cover;
+    background-position: center;
     height: 32rem;
     margin-top: -1.7rem; }
-
+    @media screen and (max-width: 1100px) {
+      header .img {
+        margin-top: 2rem;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3; } }
+    @media screen and (max-width: 600px) {
+      header .img {
+        background-image: url("img/grandCanyonMobile.jpg"); } }
+  @media screen and (max-width: 767px) {
+    header {
+      padding: 2rem; } }
 section {
   padding: 4rem; }
   @media screen and (max-width: 767px) {
     section {
-      padding: 2rem;
-      margin: 1rem; } }
+      padding: 2rem; } }
 .content {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -129,7 +148,7 @@ section {
   @media screen and (max-width: 1100px) {
     .content {
       grid-template: auto auto / 1fr; }
-      .content .u3, .content .u6, .content .u8 {
+      .content .u3, .content .u6, .content .u8, .content .d8 {
         margin-block-start: 0; } }
 figure {
   margin-inline-start: 0;
@@ -140,6 +159,8 @@ figure {
     margin-block-start: -6rem; }
   figure.u8 {
     margin-block-start: -8rem; }
+  figure.d8 {
+    margin-block-start: 8rem; }
   figure figcaption {
     font-style: italic;
     color: rgba(41, 67, 128, 0.88);
@@ -149,9 +170,10 @@ figure {
         font-size: 1.6rem;
         line-height: 1.8rem; } }
 footer {
-  text-align: center; }
-  footer img {
-    width: auto; }
+  background: url("img/footer.jpg") no-repeat;
+  height: 42rem;
+  background-size: contain;
+  background-position: center bottom; }
 
 header,
 section,
