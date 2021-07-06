@@ -237,7 +237,7 @@
       "oAP" : "\/img\/footer.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -320,12 +320,38 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/meetMarket.jpg" : {
+      "ft" : 16384,
+      "iS" : 270280,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/meetMarket.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/mort.jpg" : {
       "ft" : 16384,
       "iS" : 236759,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/img\/mort.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/sailing.jpg" : {
+      "ft" : 16384,
+      "iS" : 249792,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/sailing.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -508,7 +534,7 @@
       "oAP" : "\/site.webmanifest",
       "oF" : 0
     },
-    "\/styles.css" : {
+    "\/styles070621.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -516,7 +542,7 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/styles-min.css",
+      "oAP" : "\/styles070621-min.css",
       "oF" : 0,
       "pg" : 0
     }
