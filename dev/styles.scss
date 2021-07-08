@@ -181,7 +181,7 @@ section {
   gap: 2rem;
   @media screen and (max-width: $l-max) {
     grid-template: auto auto / 1fr;
-    .u3, .u6, .u8, .d8 {
+    .u3, .u6, .u8, .u12, .d8 {
       margin-block-start: 0;
     }
   }
@@ -199,6 +199,9 @@ figure {
   &.u8 {
     margin-block-start: -8rem;
   }
+  &.u12 {
+    margin-block-start: -12rem;
+  }
   &.d8 {
     margin-block-start: 8rem;
   }
@@ -212,6 +215,7 @@ figure {
     }
   }
 }
+
 
 /* UNIQUE SECTION STYLES */
 .images {

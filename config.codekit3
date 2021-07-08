@@ -177,19 +177,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/backgroundPink.jpg" : {
-      "ft" : 16384,
-      "iS" : 549325,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/backgroundPink.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/img\/beach.jpg" : {
       "ft" : 16384,
       "iS" : 1294938,
@@ -385,32 +372,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/travel.jpg" : {
-      "ft" : 16384,
-      "iS" : 594156,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/travel.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/travel2.jpg" : {
-      "ft" : 16384,
-      "iS" : 516859,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/travel2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/img\/ursa.jpg" : {
       "ft" : 16384,
       "iS" : 306989,
@@ -533,6 +494,18 @@
       "oA" : 0,
       "oAP" : "\/site.webmanifest",
       "oF" : 0
+    },
+    "\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/styles070621.css" : {
       "aP" : 1,
