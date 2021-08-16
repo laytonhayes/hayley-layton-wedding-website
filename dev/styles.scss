@@ -178,7 +178,7 @@ section {
 .content {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 2rem;
+  gap: 8rem;
   @media screen and (max-width: $l-max) {
     grid-template: auto auto / 1fr;
     .u3, .u6, .u8, .u12, .d8 {

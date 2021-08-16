@@ -64,6 +64,30 @@
       "oAP" : "\/browserconfig.xml",
       "oF" : 0
     },
+    "\/dev\/index.jade" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/index.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/dev\/styles.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/favicon-16x16.png" : {
       "ft" : 32768,
       "iS" : 454,
