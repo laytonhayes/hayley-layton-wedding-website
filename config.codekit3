@@ -203,6 +203,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/cali.jpg" : {
+      "ft" : 16384,
+      "iS" : 259513,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/cali.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/first.jpg" : {
       "ft" : 16384,
       "iS" : 327228,
@@ -216,15 +229,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/footer.jpg" : {
-      "ft" : 16384,
-      "iS" : 254163,
-      "jF" : 0,
+    "\/img\/footer.png" : {
+      "ft" : 32768,
+      "iS" : 569462,
       "oA" : 0,
-      "oAP" : "\/img\/footer.jpg",
+      "oAP" : "\/img\/footer.png",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -508,18 +521,6 @@
       "oAP" : "\/site.webmanifest",
       "oF" : 0
     },
-    "\/styles.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/styles-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/styles070621.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -529,6 +530,18 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/styles070621-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/styles081621.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles081621-min.css",
       "oF" : 0,
       "pg" : 0
     }

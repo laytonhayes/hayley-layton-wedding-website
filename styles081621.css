@@ -146,7 +146,8 @@ section {
   gap: 8rem; }
   @media screen and (max-width: 1100px) {
     .content {
-      grid-template: auto auto / 1fr; }
+      grid-template: auto auto / 1fr;
+      gap: 4rem; }
       .content .u3, .content .u6, .content .u8, .content .u12, .content .d8 {
         margin-block-start: 0; } }
 figure {
@@ -176,11 +177,16 @@ figure {
   grid-template-columns: auto auto;
   grid-template-rows: auto 1fr;
   gap: 0; }
+  .images.bottom {
+    margin-block-start: -12rem;
+    grid-template-columns: 1fr; }
   @media screen and (max-width: 1100px) {
     .images {
       display: inline-flex;
       flex-wrap: wrap;
-      gap: 0 2rem; } }
+      gap: 0 2rem; }
+      .images.bottom {
+        margin-block-start: 0; } }
   .images .about {
     grid-column-start: 1;
     grid-row-start: 2; }
@@ -199,8 +205,8 @@ figure {
         grid-column-start: 1;
         grid-row-start: 2; } }
 footer {
-  background: url("img/footer.jpg") no-repeat;
-  height: 31rem;
+  background: url("img/footer.png") no-repeat;
+  height: 28rem;
   background-size: contain;
   background-position: center bottom; }
 

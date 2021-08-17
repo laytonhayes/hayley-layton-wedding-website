@@ -181,6 +181,7 @@ section {
   gap: 8rem;
   @media screen and (max-width: $l-max) {
     grid-template: auto auto / 1fr;
+    gap: 4rem;
     .u3, .u6, .u8, .u12, .d8 {
       margin-block-start: 0;
     }
@@ -223,10 +224,17 @@ figure {
   grid-template-columns: auto auto;
   grid-template-rows: auto 1fr;
   gap: 0;
+  &.bottom {
+    margin-block-start: -12rem;
+    grid-template-columns: 1fr;
+  }
   @media screen and (max-width: $l-max) {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0 2rem;
+    &.bottom {
+      margin-block-start: 0; 
+    }
   }
   .about {
     grid-column-start: 1;
@@ -244,13 +252,14 @@ figure {
     @media screen and (max-width: $xs-max) {
       grid-column-start: 1;
       grid-row-start: 2;
-    }     
+    }
   }
 }
 
+
 footer {
-  background: url('img/footer.jpg') no-repeat;
-  height: 31rem;
+  background: url('img/footer.png') no-repeat;
+  height: 28rem;
   background-size: contain;
   background-position: center bottom;
 }
